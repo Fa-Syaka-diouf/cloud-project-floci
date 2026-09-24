@@ -1,12 +1,12 @@
-# Cloud Project — Terraform + Floci (GCP)
+# Cloud Project - Terraform + Floci (GCP)
 
 Déploiement de deux services **Google Cloud** avec **Terraform** sur un environnement Cloud **local** émulé par **Floci**, puis vérification dans **Floci UI**.
 
 | | |
 |---|---|
-| **Cloud Provider** | Google Cloud Platform (GCP) — émulé par `floci/floci-gcp` (port **4588**) |
-| **Service 1** | **Cloud Storage** (GCS) — module [`modules/storage`](modules/storage) |
-| **Service 2** | **Pub/Sub** — module [`modules/pubsub`](modules/pubsub) |
+| **Cloud Provider** | Google Cloud Platform (GCP) - émulé par `floci/floci-gcp` (port **4588**) |
+| **Service 1** | **Cloud Storage** (GCS) - module [`modules/storage`](modules/storage) |
+| **Service 2** | **Pub/Sub** - module [`modules/pubsub`](modules/pubsub) |
 | **Outil IaC** | Terraform ≥ 1.6, provider `hashicorp/google` ~> 7.0 |
 
 ---
@@ -15,7 +15,7 @@ Déploiement de deux services **Google Cloud** avec **Terraform** sur un environ
 
 ### Pourquoi GCP ?
 
-J'utilise GCP au quotidien (stage : BigQuery, Datastream, Dataform, Terraform). Le provider Terraform `google` m'est familier, ce qui me permet de me concentrer sur ce que le projet apporte de nouveau : **rediriger ce provider vers un émulateur local**.
+J'utilise GCP au quotidien (en stage a InTouch : BigQuery, Datastream, Dataform, Terraform). Le provider Terraform `google` m'est familier, ce qui me permet de me concentrer sur ce que le projet apporte de nouveau : **rediriger ce provider vers un émulateur local**.
 
 ### Pourquoi Cloud Storage + Pub/Sub ?
 
